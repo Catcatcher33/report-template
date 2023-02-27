@@ -1,0 +1,69 @@
+% TODO: Clean this up.
+\usepackage[pdftex]{graphicx} % Required for including pictures
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+\usepackage{listings} % Includes code notation
+
+\usepackage{wrapfig} %Wraps images
+
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[a4paper, lmargin=0.12\paperwidth, rmargin=0.12\paperwidth, tmargin=0.1\paperheight, bmargin=0.1\paperheight]{geometry} %margins
+\usepackage{parskip}
+\usepackage{amsmath} % For mathematical symbols.
+\DeclareMathOperator{\Tr}{Tr}
+\usepackage{comment}
+
+\usepackage[all]{nowidow} % Tries to remove widows
+\usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[table,xcdraw]{xcolor}
+
+%-----------------------
+% Set pdf information and add title, fill in the fields
+%-----------------------
+\hypersetup{ 	
+pdfsubject = {},
+pdftitle = {},
+pdfauthor = {}
+}
+
+%-----------------------
+% Coding packages
+%-----------------------
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[table,xcdraw]{xcolor}
+
+\definecolor{codegreen}{rgb}{0.52,0.67,0.37}
+\definecolor{codegray}{rgb}{0.65,0.7,0.6}
+\definecolor{codebeige}{rgb}{0.92,0.88,0.88}
+\definecolor{backcolour}{rgb}{0.07,0.07,0.07}
+\definecolor{codered}{rgb}{0.81, 0.36, 0.36}
+\definecolor{codeblue}{rgb}{0.45, 0.63, 0.82}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},
+    commentstyle=\color{codegray},
+    keywordstyle=\color{codeblue},
+    numberstyle=\tiny\color{codered},
+    stringstyle=\color{codegreen},
+    basicstyle=\ttfamily\footnotesize\color{codebeige},
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+

@@ -1,0 +1,8 @@
+# Large files (e.g., PNG, JPEG, etc.)
+assets/*
+
+# Production files (if any)
+out/
+
+# System-specific files
+.DS_Store
